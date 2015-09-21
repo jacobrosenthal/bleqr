@@ -1,0 +1,3 @@
+rootProject.name = 'bleqr'
+
+include ':app'
