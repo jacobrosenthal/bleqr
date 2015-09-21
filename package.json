@@ -11,7 +11,7 @@
     "eddystone-beacon-scanner": "^3.0.0",
     "events": "^1.0.2",
     "react-native": "^0.11.0",
-    "react-native-ble": "0.0.3",
+    "react-native-ble": "0.0.4",
     "react-native-camera": "lwansbrough/react-native-camera",
     "url": "^0.11.0",
     "util": "^0.10.3"
