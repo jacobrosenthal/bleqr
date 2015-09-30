@@ -3,7 +3,7 @@ An react native (ios only) application that allows you to scan a qr code contain
 
 ![qr code with overlaid telemetry data](https://github.com/jacobrosenthal/bleqr/raw/master/screenshots/IMG_2327.PNG)
 
-## Install and start the packager
+## Install and start the (webpack) packager
 ```
 npm i && npm run start
 ```
@@ -19,9 +19,3 @@ Google offers a service to create qr codes. Heres one for the uid of the simulat
 
 ## Known issues
 No Android. Theres no [noble](https://github.com/sandeepmistry/noble) shim yet, and I'm still working on my [ios noble shim](https://github.com/jacobrosenthal/react-native-ble)
-
-React Native packager doesnt have the concept of a resolve alias to globally swap out requires, and webpack is also [not working](https://github.com/mjohnston/react-native-webpack-server/issues/75) so you must manually edit node_modules/eddystone-beacon-scanner/lib/eddystone-beacon-scanner.js and change the noble require
-```
-//var noble = require('noble');
-var noble = require('react-native-ble');
-```
